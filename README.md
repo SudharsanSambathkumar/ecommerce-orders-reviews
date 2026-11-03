@@ -1,5 +1,27 @@
 # E-Commerce Orders & Reviews
 
+## Results at a glance
+
+| Task | Result |
+|---|---|
+| A1. Revenue per category | Fitness 105.00, Electronics 100.00, Home 25.00 |
+| A2. Top 2 products by quantity | Yoga Mat (7), Wireless Mouse (5) |
+| B1. Sentiment label accuracy | 50% (2 of 4) |
+| B2. Products bought by customers with a negative review | Desk Lamp, Wireless Mouse |
+
+The B2 result depends on customer links I had to assume. See [Part B.2](#part-b2-graph).
+
+## Project layout
+
+```
+data/       orders, reviews and customer links
+orders.py   Part A: cleaning, revenue, top products
+sentiment_eval.py   Part B.1: accuracy and misses
+graph.py    Part B.2: graph model and query
+tests/      unit tests for each part
+results/    saved output and screenshots from each run
+```
+
 ## Run it
 
 ```
@@ -9,6 +31,10 @@ python sentiment_eval.py
 python graph.py
 pytest
 ```
+
+Test run:
+
+![Test results](results/tests.png)
 
 ## Part A: orders
 
@@ -32,6 +58,8 @@ Top 2 products by quantity:
 | Yoga Mat | 7 |
 | Wireless Mouse | 5 |
 
+![Part A output](results/part_a_orders.png)
+
 ## Part B.1: sentiment evaluation
 
 Accuracy is **50% (2 of 4)**.
@@ -42,6 +70,8 @@ Accuracy is **50% (2 of 4)**.
 | Exactly what I needed, five stars! | positive | positive | Yes |
 | Arrived broken, waste of money. | negative | negative | Yes |
 | It's okay, nothing special. | neutral | positive | No |
+
+![Part B.1 output](results/part_b_sentiment_eval.png)
 
 Borderline cases:
 
@@ -79,3 +109,5 @@ ORDER BY p.name
 ```
 
 Result: **Desk Lamp, Wireless Mouse**. C3 is the only customer with a negative review. Wireless Mouse is included because C3 bought it too, even though the negative review was for the lamp.
+
+![Part B.2 output](results/part_b_graph_query.png)

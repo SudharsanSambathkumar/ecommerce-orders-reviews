@@ -1,0 +1,7 @@
+[
+  {"order_id": "O1", "product": "Wireless Mouse", "category": "electronics", "qty": 3, "unit_price": 20.0},
+  {"order_id": "O2", "product": "wireless mouse", "category": "Electronics", "qty": 2, "unit_price": 20.0},
+  {"order_id": "O3", "product": "Yoga Mat", "category": "", "qty": 5, "unit_price": 15.0},
+  {"order_id": "O4", "product": "Desk Lamp", "category": "Home", "qty": 1, "unit_price": 25.0},
+  {"order_id": "O5", "product": "Yoga Mat", "category": "Fitness", "qty": 2, "unit_price": 15.0}
+]

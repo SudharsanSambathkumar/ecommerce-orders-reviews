@@ -1,0 +1,6 @@
+[
+  {"review_id": "R1", "customer": "C1", "product": "Wireless Mouse", "text": "Works fine but the battery died in a week.", "reference": "mixed", "llm": "positive"},
+  {"review_id": "R2", "customer": "C2", "product": "Yoga Mat", "text": "Exactly what I needed, five stars!", "reference": "positive", "llm": "positive"},
+  {"review_id": "R3", "customer": "C3", "product": "Desk Lamp", "text": "Arrived broken, waste of money.", "reference": "negative", "llm": "negative"},
+  {"review_id": "R4", "customer": "C4", "product": "Yoga Mat", "text": "It's okay, nothing special.", "reference": "neutral", "llm": "positive"}
+]

@@ -1,0 +1,4 @@
+$ python graph.py
+Products purchased by customers with a negative review
+  Desk Lamp
+  Wireless Mouse

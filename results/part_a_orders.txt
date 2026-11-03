@@ -1,0 +1,8 @@
+$ python orders.py
+Revenue per category
+  Electronics: 100.00
+  Fitness: 105.00
+  Home: 25.00
+Top 2 products by quantity
+  Yoga Mat: 7
+  Wireless Mouse: 5

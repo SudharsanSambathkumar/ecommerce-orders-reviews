@@ -1,0 +1,10 @@
+$ python sentiment_eval.py
+Accuracy: 50% (2/4)
+Recall per reference label
+  mixed: 0%
+  positive: 100%
+  negative: 100%
+  neutral: 0%
+Misses
+  "Works fine but the battery died in a week." reference=mixed llm=positive
+  "It's okay, nothing special." reference=neutral llm=positive

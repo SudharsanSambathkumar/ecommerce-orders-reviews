@@ -1,0 +1,25 @@
+$ pytest -v
+============================= test session starts =============================
+collecting ... collected 19 items
+
+tests/test_graph.py::test_builds_purchased_and_belongs_to_edges PASSED   [  5%]
+tests/test_graph.py::test_builds_reviewed_edge_carrying_sentiment PASSED [ 10%]
+tests/test_graph.py::test_query_includes_products_the_customer_did_not_review PASSED [ 15%]
+tests/test_graph.py::test_query_ignores_customers_without_a_negative_review PASSED [ 21%]
+tests/test_graph.py::test_assignment_data_query_result PASSED            [ 26%]
+tests/test_orders.py::test_product_casing_and_spacing_are_normalised PASSED [ 31%]
+tests/test_orders.py::test_category_casing_is_normalised PASSED          [ 36%]
+tests/test_orders.py::test_missing_category_is_taken_from_another_order_of_the_same_product PASSED [ 42%]
+tests/test_orders.py::test_category_is_unknown_when_no_order_of_the_product_has_one PASSED [ 47%]
+tests/test_orders.py::test_clean_does_not_change_the_input PASSED        [ 52%]
+tests/test_orders.py::test_revenue_is_qty_times_price_summed_per_category PASSED [ 57%]
+tests/test_orders.py::test_top_products_ranks_by_total_quantity_not_order_count PASSED [ 63%]
+tests/test_orders.py::test_top_products_breaks_ties_alphabetically PASSED [ 68%]
+tests/test_orders.py::test_assignment_dataset_answers PASSED             [ 73%]
+tests/test_sentiment_eval.py::test_accuracy_is_share_of_exact_matches PASSED [ 78%]
+tests/test_sentiment_eval.py::test_confusion_counts_reference_llm_pairs PASSED [ 84%]
+tests/test_sentiment_eval.py::test_recall_is_computed_per_reference_label PASSED [ 89%]
+tests/test_sentiment_eval.py::test_misses_returns_only_disagreements PASSED [ 94%]
+tests/test_sentiment_eval.py::test_assignment_labels_score_half PASSED   [100%]
+
+============================= 19 passed in 1.08s ==============================
